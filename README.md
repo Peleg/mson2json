@@ -14,3 +14,7 @@ npm install -g mson2json
 $ mson2json PATH_TO_MSON_FILE [OUTPUT_FILE]
 ```
 
+## TODO
+
+1. Add tests
+2. Add solid docs

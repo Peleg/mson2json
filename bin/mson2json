@@ -3,6 +3,9 @@
 /* vim: ts=4 sw=4 et syntax=JavaScript */
 
 (function (mson2json, fs, inputPath, outputPath) {
+
+    'use strict';
+
     if (!inputPath) throw new Error('Must provide path to MSON file!');
 
     outputPath || (outputPath = require('path').basename(inputPath) + '_json.md');
