@@ -2,10 +2,7 @@
   "name": "mson2json",
   "version": "1.0.0",
   "description": "Convert API Blueprints in MSON format to JSON!",
-  "main": "mson2json.js",
-  "scripts": {
-    "test": "tests/all.js"
-  },
+  "main": "bin/mson2json",
   "dependencies": {
     "blueprint-transactions": "0.0.2",
     "drafter": "^0.2.8"
