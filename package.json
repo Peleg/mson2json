@@ -1,0 +1,32 @@
+{
+  "name": "mson2json",
+  "version": "1.0.0",
+  "description": "Convert API Blueprints in MSON format to JSON!",
+  "main": "mson2json.js",
+  "scripts": {
+    "test": "tests/all.js"
+  },
+  "dependencies": {
+    "blueprint-transactions": "0.0.2",
+    "drafter": "^0.2.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PelegR/json2mson.git"
+  },
+  "keywords": [
+    "MSON",
+    "json",
+    "to",
+    "mson",
+    "api",
+    "blueprints",
+    "apiary"
+  ],
+  "author": "Peleg Rosenthal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PelegR/json2mson/issues"
+  },
+  "homepage": "https://github.com/PelegR/json2mson#readme"
+}
