@@ -1,4 +1,4 @@
-#! /usr/local/bin/node
+#! /usr/bin/env node
 
 /* vim: ts=4 sw=4 et syntax=JavaScript */
 
