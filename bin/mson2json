@@ -2,7 +2,7 @@
 
 /* vim: ts=4 sw=4 et syntax=JavaScript */
 
-(function (mson2json, fs, inputPath, outputPath) {
+(function (m2jCommand, fs, inputPath, outputPath) {
 
     'use strict';
 
@@ -10,7 +10,7 @@
 
     outputPath || (outputPath = require('path').basename(inputPath) + '_json.md');
 
-    mson2json(inputPath, function (json) {
+    m2jCommand(inputPath, function (json) {
         fs.writeFile(outputPath, json, function (err) {
             if (err) throw err;
             process.exit();
@@ -18,7 +18,7 @@
     });
 
 })(
-    require('../lib/mson2json'),
+    require('../lib/command'),
     require('fs'),
     process.argv[2],
     process.argv[3]
