@@ -2,24 +2,10 @@
 
 /* vim: ts=4 sw=4 et syntax=JavaScript */
 
-(function (m2jCommand, fs, inputPath, outputPath) {
+var M2jCommand = require('../lib/command');
 
-    'use strict';
+var m2jCli = new M2jCommand({
+    argv: process.argv.slice(2)
+});
 
-    if (!inputPath) throw new Error('Must provide path to MSON file!');
-
-    outputPath || (outputPath = require('path').basename(inputPath) + '_json.md');
-
-    m2jCommand(inputPath, function (json) {
-        fs.writeFile(outputPath, json, function (err) {
-            if (err) throw err;
-            process.exit();
-        });
-    });
-
-})(
-    require('../lib/command'),
-    require('fs'),
-    process.argv[2],
-    process.argv[3]
-);
+m2jCli.run();
