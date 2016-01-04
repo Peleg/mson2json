@@ -1,15 +1,15 @@
 {
   "name": "mson2json",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Convert API Blueprints in MSON format to JSON!",
   "main": "lib/mson2json.js",
   "preferGlobal": "true",
   "bin": {
-    "mson2json" : "bin/mson2json"
+    "mson2json": "bin/mson2json"
   },
   "dependencies": {
     "blueprint-transactions": "0.0.2",
-    "protagonist": "^1.1.1"
+    "protagonist": "1.1.1"
   },
   "repository": {
     "type": "git",
